@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>multi-step form</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    
-     
-
-     <div class="container">
-        <form action="sec form.html">
-            <h2>BIO</h2>
-            <input type="text" placeholder="name">
-            <input type="text" placeholder="last name">
-            <input type="date" placeholder="">
-            <input type="text" placeholder="father name">
-            <input type="text" placeholder="contect number">
-            <div>
-                <button class="btn-box"><a href="sec form.html">continue</a></button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link login" href="#">Login</a>
+              <a class="nav-link signup-nav" href="#">Signup</a>
+              <a class="nav-link disabled" aria-disabled="true">Admin</a>
             </div>
-            
-            
+          </div>
+        </div>
+      </nav>
+    <div class="container signup">
+      <form type="submit">
+        <h2>Sign up</h2>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
 
-            
-        </form>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <div>
+          <button class="btn-box"><a href="#">sign up</a></button>
+        </div>
+      </form>
+    </div>
+    <div class="container signin">
+      <form type="submit">
+        <h2>Sign in</h2>
+        
 
-     </div>
-
-
-</body>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <div>
+          <button class="btn-box"><a href="#">sign in</a></button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="js/script.js"></script>
+  </body>
 </html>
-
-
-    
-    
-
-    
-    
-
-    
-
-
