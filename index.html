@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auth form</title>
+    <title>Auth Form</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,27 +11,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- navbar -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link login" href="#">Login</a>
-              <a class="nav-link signup-nav" href="#">Signup</a>
-              <a class="nav-link disabled" aria-disabled="true">Admin</a>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active home-nav" aria-current="page" href="#">Home</a>
+            <a class="nav-link login-nav" href="#">Login</a>
+            <a class="nav-link signup-nav" href="#">Signup</a>
+            <a class="nav-link disabled" aria-disabled="true">Admin</a>
           </div>
         </div>
-      </nav>
-    <div class="container signup">
+      </div>
+    </nav>
+    <!-- signup-->
+    <div class="container" id="signup">
       <form type="submit">
         <h2>Sign up</h2>
         <input type="text" placeholder="First Name" />
@@ -44,10 +55,10 @@
         </div>
       </form>
     </div>
-    <div class="container signin">
+    <!-- signup-->
+    <div class="container" id="signin">
       <form type="submit">
-        <h2>Sign in</h2>
-        
+        <h2>Log in</h2>
 
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
@@ -55,6 +66,42 @@
           <button class="btn-box"><a href="#">sign in</a></button>
         </div>
       </form>
+    </div>
+    <div class="main-card">
+      <div class=" text-center ">
+        <div class="row d-flex">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/coffeeplcup.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/CoffeePL_Tamper.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/Coffee-Image_Hario-Tea-Press_dbcc3335-ba56-4c5b-8ef0-84508a701881_540x-300x300.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="js/script.js"></script>
   </body>

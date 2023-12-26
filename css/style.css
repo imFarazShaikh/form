@@ -3,14 +3,19 @@
   padding: 0;
 }
 body {
-  background-color: rgba(0, 0, 0, 0.99);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 /* sign un/in */
-.signup{
-    display: none;
-    position: absolute;
+#signin {
+  display: none;
+  position: absolute;
+  transition: 500ms;
 }
-
+#signup {
+  display: none;
+  position: absolute;
+  transition: 500ms;
+}
 
 .container {
   height: 480px;
@@ -68,4 +73,13 @@ form button {
   text-decoration: none;
   color: black;
   font-size: 20px;
+}
+.d-flex {
+  display: flex;
+}
+.main-card {
+  margin-top: 7%;
+  margin-left: 7%;
+
+  justify-content: center;
 }
